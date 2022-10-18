@@ -1,0 +1,15 @@
+
+h1{
+    color: #bc6c25;
+    background-color: #dda15e;
+
+}
+p{
+    color: #fefae0;
+    background-color: rgb(186, 186, 202);
+    padding: 20px;
+    border: 10px solid #283618;
+    margin: 20px;
+    margin:  auto 100px;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.titulo{
+    margin: 15px;
+    color: #3f3693;
+}
+h1{
+
+    color: rgb(76, 88, 54);
+    
+    text-align: center; 
+}
+h2{
+    color: blueviolet;
+}
+p{
+    color: darkblue;
+}
+.clase1{
+    border: 10px solid crimson;
+    background-color: bisque;
+    text-align: center;
+    margin: 15px 100px;
+    padding: 15px;
+}

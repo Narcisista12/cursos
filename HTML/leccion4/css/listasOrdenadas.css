@@ -1,0 +1,17 @@
+ol{
+    list-style: none;
+    counter-reset: contador;
+}
+
+ol li{
+    counter-increment: contador;
+}
+
+ol li::after{
+    content: ".";
+}
+
+ol li::before{
+    content: "." counter(contador) ") ";
+    color: rgb(4, 87, 59);
+}

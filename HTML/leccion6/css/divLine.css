@@ -1,0 +1,14 @@
+h1{
+    color: rgb(76, 88, 54);
+}
+h2{
+    color: blueviolet;
+}
+p{
+    color: darkblue;
+}
+div{
+    border: 10px solid crimson;
+    background-color: bisque;
+    text-align: center;
+}
