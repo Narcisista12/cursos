@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onFOcus</title>
+</head>
+<body>
+    <h1 id="titulo">onFOcus</h1><br>
+    Nombre: <input type="text" id="nombre" onfocus="cambiar(this)" onblur="blanco(this)">
+    <script>
+        function cambiar(elemento){
+            elemento.style.background = 'blue';
+        }
+        function blanco(cambiar){
+            cambiar.style.background = 'white'
+        }
+    </script>
+</body>
+</html>

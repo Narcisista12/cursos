@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo Dom con javascrip</title>
+    <style>
+        .zul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecero">Ejemplo Dom con javascrip</h1>
+    <p id="parrafo">saludos </p>
+    <p id="parrafo2" class="zul"> este es el parrafo 2</p>
+    <p class="zul"> este es el parrafo 3</p>
+    <script>
+        let cabecero= document.getElementById('cabecero');
+        let parrafo= document.getElementById('parrafo');
+        console.log(`saludes de parrafo:   ${parrafo.innerHTML}`);
+        console.log( `valor cabecero: ${cabecero.innerHTML}`  );
+        console.log ('saludes desde javaScrip'); 
+        /* parrafo.innerHTML = 'cambiar el contenido del parrafo';
+        cabecero.innerHTML = 'Nuevo cabecero HTML';
+        console.log(`Nuevo valor de parrafo: ${parrafo.innerHTML}`); */
+        let parrafo2 = document.getElementsByTagName('p');
+        console.log(`Numero de parrafos: ${parrafo2.length}`);
+        for(let i=0; i<parrafo2.length; i++){
+            console.log(`parrafo ${i}  ${parrafo2[i].innerHTML}`)
+        }
+        let parrafo3 = document.getElementsByClassName('zul');
+        console.log(`parrafo 3 ${parrafo3[0].innerHTML}`);
+        for(let elemento of parrafo2){
+            console.log(`elemento con for of ${elemento.innerHTML}`)
+        }
+        let querrysall = document.querySelectorAll('p.zul');
+        console.log(querrysall[0]);
+
+
+    </script>
+</body>
+</html>

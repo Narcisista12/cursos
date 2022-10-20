@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+.rosa{
+border: 20px solid hotpink;
+
+}
+
+.amarillo{
+    border: 2px solid gold;
+}
+
+.verde{
+    border: 5px dotted green;
+}
+
+
+.violeta{
+    border: 20px double violet;
+}
+.naranja{
+    border: 12px dashed coral;
+}
+

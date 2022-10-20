@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+}
+.punteado{
+    border-style: dotted;
+}
+.discontinuo{
+    border-style: dashed;
+}

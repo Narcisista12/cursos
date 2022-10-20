@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form id="formulario">
+        Nombre: <input type="text" name="nombre" value="Javier"><br>
+        apellido <input type="text" name="apellido" value="Tarazona"><br>
+
+    </form>
+    <button onclick="mostrarValaro()">Mostrar</button>
+    <div id="valores"></div>
+    <script>
+      /*   function mostrarValaro(){
+            let formulario =document.forms['formulario'];
+            let texto ='';
+            for (let elemento of formulario){
+                texto+=elemento.value + '<br/>'
+            }
+            document.getElementById('valores').innerHTML = texto;
+        } */
+        function mostrarValaro(){
+            let formulario =document.forms['formulario'];
+            let texto ='';
+            let nombre = formulario['nombre'];
+            let apellido = formulario['apellido'];
+            texto = nombre.value + "<br/>" + apellido.value;
+            console.log(texto);
+            document.getElementById('valores').innerHTML = texto;
+
+      
+        }
+    </script>  
+</body>
+</html>
